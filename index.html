@@ -1,59 +1,241 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
-  <style>
+  <style> 
+      :root {
+          --cor-fundo: #ffffff;
+          --cor-texto: #000000;
+          --cor-header: #835BC2;
+          --cor-main: #7B8FD1;
+          --cor-borda: #0C0C0C;
+          --cor-botao: #ffffff;
+        }
+
+        body.escuro {
+        --cor-fundo: #121212;
+        --cor-texto: #ffffff;
+        --cor-header: #1f2937;
+        --cor-main: #374151;
+        --cor-borda: #ffffff;
+        --cor-botao: #222222;
+        }
+
+        body {
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+        margin: 0;
+        font-family: Arial, sans-serif;  
+            
+        transition: background-color 0.3s, color 0.3s;
+        }
+
   header {
-      background-color: #4682B4;
-      color: #000000;
+      background-color: var(--cor-header);
+      color: var(--cor-texto);
       text-align: center;
+      max-width: 800px;
+      margin: 20px auto;
+      padding:16px;
+      border: 5px solid var(--cor-borda);
+      border-radius: 8px;
+  } 
+      
+  main {
+      background-color: var(--cor-main);
+      color: var(--cor-texto);
       max-width: 800px;
       margin: 0 auto;
       padding:16px;
-      border: 5px solid #0C0C0C;
+      border-radius: 8px;
   }
-  main {
-      background-color: #7B8FD1;
-      color: #FFFFFF;
-      max-width: 800px;
-      margin: 0 auto;
-      padding:16px;  
+      
+      article{
+      display: flex;
+      align-items: center;
+      gap: 25px;
+          
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+          
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
   }
-  img{
-  width: 300px;
-  height: auto;
-  }
-</style>
-       
-  </head>
-  <body>
-     
-    <header>
-      <h1> 10 curiosidades sobre borboletas que você so verá aqui </h1>
-      <p> Aqui você vai ver 10 curiosidades incriveis sobre borboletas </p>  
-    </header>
-     
-    <main>
-        <img src="Gemini_Generated_Image_tclkhltclkhltclk.png" alt="O planeta é cheio de curiosidades inesqueciveis para se descobrir e aqui você verá 10 curiosidades incriveis">
-    <h2>Meu primeiro post</h2>  
-    <p>Por:Nicolle andrade escouto</p>
-    <p>Boas-vindas! Aqui vou mostrar 10 curiosidades incriveis sobre borboletas. </p> 
-       <button>❤️​<span>0</span></button>
-<button>🦋​<span>0</span></button>
-    </main>  
-  </body>
-    <script>
-        const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
 
-       function botaoClicado() {
-    console.log("fui clicado");
-    let texto = botao.querySelector("span");
-    texto.textContent++;
+ article img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: #ffffff;
+    border-radius: 8px;
+    flex-shrink: 0;
 }
-</script>
-</html> 
+.conteudo {
+            flex: 1;
+        }
+
+        .botoes {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        article button {
+            padding: 8px 12px;
+            border: 1px solid var(--cor-borda);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            background-color: #D8D7FC;
+            color: #000000;
+        }
+
+        article button:hover {
+            opacity: 0.8;
+        }
+
+        #botaoTema {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+
+            padding: 12px 16px;
+            border: 1px solid var(--cor-borda);
+            border-radius: 8px;
+
+            cursor: pointer;
+            font-size: 16px;
+
+            background-color: var(--cor-botao);
+            color: var(--cor-texto);
+
+            z-index: 1000;
+        }
+
+        #botaoTema:hover {
+            opacity: 0.8;
+        }
+      
+</style>
+ </head>
+    
+  <body>
+      
+    <header>
+      <h1> 10 curiosidades sobre borboletas que você só verá aqui </h1>
+      <p> aqui você vai ver 10 curiosidades incriveis sobre borboletas </p>   
+    </header>
+      
+    <main> 
+
+    <article>
+        <img src=
+    alt=>
+        <div class> 
+    <h2>Meu primeiro post</h2>   
+    <p>Por:nicolle andrade escouto</p>
+    <p>Boas vindas aqui vou mostras 10 curiosiodades incriveis sobre borboletas. </p>
+    <div class="botoes">
+    <button class="botao-curtida">❤️<span>0</span></button> 
+    <button class="botao-curtida">👍<span>0</span></button> 
+    <button class="botao-curtida">👎<span>0</span></button> 
+        </div>
+            </div>
+    </article>
+
+     <article>
+    <img src=https://giphy.com/gifs/renataparaiso-spoiler-borboleta-tribroparaiso-UapubF0O40lTqakKwf"
+    alt=">
+        <div class="conteudo">       
+    <h2> Elas sentem o gosto com os pés</h2></h2>   
+    <p><As borboletas usam receptores químicos localizados nas patas traseiras para saborear as plantas e saber se o local é adequado para pousar ou colocar ovos.p>
+    <p>Fonte:https://borboletariodesaopaulo.com.br/10-curiosidades-sobre-borboletas/</p>
+    <a href=>Clique aqui para visitar o site: https://borboletariodesaopaulo.com.br/10-curiosidades-sobre-borboletas/</a>
+    <div class="botoes">       
+    <button class="botao-curtida">❤️<span>0</span></button> 
+    <button class="botao-curtida">👍<span>0</span></button> 
+    <button class="botao-curtida">👎<span>0</span></button> 
+        </div> 
+             </div> 
+    </article>
+
+        <article>
+        <img src=
+    alt=">
+        <div class="conteudo">       
+    <h2>A alimentação é 100% líquida</h2>   
+    <p>Elas não conseguem comer alimentos sólidos. Elas usam um órgão em formato de canudo chamado espirotromba (ou probóscide) para sugar néctar, seiva, frutas em decomposição e até minerais na lama.</p>
+    <p>https://borboletariodesaopaulo.com.br/10-curiosidades-sobre-borboletas/</p>
+    <a href=>Clique aqui para visitar o site:https://borboletariodesaopaulo.com.br/10-curiosidades-sobre-borboletas/</a>
+    <div class="botoes">       
+    <button class="botao-curtida">❤️<span>0</span></button> 
+    <button class="botao-curtida">👍<span>0</span></button> 
+    <button class="botao-curtida">👎<span>0</span></button> 
+        </div> 
+             </div> 
+    </article>
+
+         <article>
+        <img src= 
+    alt=>
+        <div class="conteudo">       
+    <h2>Visão em 360° e ultravioleta </h2>   
+    <p>Os olhos compostos das borboletas permitem que elas enxerguem em todas as direções. Elas também veem a luz ultravioleta, o que ajuda a encontrar flores e parceiros reprodutivos.</p>
+    <p>https://www.instagram.com/p/DBP0JhfvACn/</p>   
+    <a href=https://www.instagram.com/p/DBP0JhfvACn/</a>
+    <div class="botoes">       
+    <button class="botao-curtida">❤️<span>0</span></button> 
+    <button class="botao-curtida">👍<span>0</span></button> 
+    <button class="botao-curtida">👎<span>0</span></button> 
+        </div> 
+             </div> 
+    </article>
+
+        
+    </main>   
+  <button id="botaoTema">
+        🌙
+    </button>
+      
+  <script>
+      const botaoTema = document.getElementById("botaoTema");
+
+        botaoTema.addEventListener("click", function () {
+
+            document.body.classList.toggle("escuro");
+
+            if (document.body.classList.contains("escuro")) {
+                botaoTema.textContent = "☀️";
+            } else {
+                botaoTema.textContent = "🌙";
+            }
+
+        });
+      
+      const botoes = document.querySelectorAll(".botao-curtida");
+
+      botoes.forEach( function(botao){
+         let curtiu = false; 
+         botao.addEventListener("click", botaoClicado);
+         function botaoClicado(){
+           console.log("fui clicado");
+           let texto = botao.querySelector("span");
+           if (curtiu === false){ 
+           texto.textContent++;
+           curtiu = true;
+      } else{
+          texto.textContent--; 
+          curtiu = false;     
+         }         
+      } 
+   })
+          
+    </script> 
+  </body>
+</html>
 
  
